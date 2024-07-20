@@ -1,0 +1,137 @@
+$primary-color: #171A1F;
+$secondary-color: #565D6D;
+
+.news-item {
+  border-bottom: 1px solid #DEE1E6;
+  cursor: pointer;
+  margin-bottom: 25px;
+  padding: 15px;
+
+  @media (max-width: 1200px) {
+    .title {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .body {
+      font-size: 13px;
+      line-height: 21px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .title {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .body {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .date, .source, .author {
+      font-size: 11px;
+      line-height: 18px;
+    }
+    .image {
+      width: 80px;
+      height: 64px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+
+    .top {
+      flex-direction: column;
+    }
+    .top div{
+      gap: 10px;
+    }
+    .image {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 13px;
+      line-height: 21px;
+    }
+    .body {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .date, .source, .author {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .title {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .body {
+      font-size: 11px;
+      line-height: 18px;
+    }
+    .date, .source, .author {
+      font-size: 9px;
+      line-height: 14px;
+    }
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  border-radius: 8px;
+  margin-right: 10px;
+  max-width: 90px;
+  max-height: 72px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: $secondary-color;
+  margin: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: $primary-color;
+}
+
+.body {
+  color: $primary-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.source {
+  color: $secondary-color;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.author {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: $primary-color;
+  margin-bottom: 20px;
+}

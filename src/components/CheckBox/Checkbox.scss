@@ -1,0 +1,43 @@
+.checkbox-label-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.checkbox-container {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9095A1;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.checkbox-container svg {
+  display: none;
+}
+
+.checkbox-container.checked {
+  background-color: #5113D7;
+}
+
+.checkbox-container.checked .tick {
+  display: block;
+}
+
+.checkbox-label {
+  margin-left: 8px;
+  font-size: 16px;
+  color: #000;
+}
+
+.checkbox-container:hover {
+  background-color: #ede7ff;
+}
+
+.checkbox-container:active {
+  background-color: #d5c4ff;
+}

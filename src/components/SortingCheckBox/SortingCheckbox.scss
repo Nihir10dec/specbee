@@ -1,0 +1,20 @@
+
+
+.sorting-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  justify-content: space-between;
+
+  .label {
+    margin-right: 0.5rem;
+  }
+
+  .sort-indicator {
+    font-size: 0.8rem;
+    color: black;
+  }
+}

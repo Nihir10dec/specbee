@@ -1,0 +1,35 @@
+$primary-color: #007bff;
+
+.parent {
+  padding: 20px;
+  width: 95vw;
+  display: flex;
+}
+
+.spacer{
+  width: 3.2%;
+}
+
+.filters {
+  width: 21.8%;
+  padding: 16px 12px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 1px 0px #171A1F12;
+  box-shadow: 0px 0px 2px 0px #171A1F1F;
+}
+
+.filters {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main {
+  width: 75%;
+}
+
+.main {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
