@@ -1,3 +1,6 @@
+$primary-color: #1E2128;
+$secondary-color: #FFFFFF;
+
 .pages {
   display: flex;
   justify-content: flex-end;
@@ -8,7 +11,7 @@
   width: 36px;
   height: 36px;
   margin-right: 10px;
-  color: #171A1F;
+  color: $primary-color;
   font-family: Inter;
   font-size: 12px;
   font-weight: 700;
@@ -17,13 +20,19 @@
   background: transparent;
 }
 
+.page-buttons:hover:not(.disabled) {
+  background-color: $primary-color; 
+  color: $secondary-color; 
+  border-radius: 50%;
+}
+
 .page-buttons.disabled {
   font-weight: 200;
 }
 
 .page-buttons.active {
-  background: #1E2128;
-  color: #FFFFFF;
+  background: $primary-color;
+  color: $secondary-color;
   font-family: Inter;
   font-size: 12px;
   font-weight: 700;

@@ -19,15 +19,15 @@ const News: React.FC<{ data: INews[] }> = ({ data }) => {
         <NewsItem key={i} data={newsItem} />
       ))}
       <div className="pages">
-        <button className={`page-buttons ${currentPage === 1 && 'disabled'}`} onClick={prevPage} disabled={currentPage === 1}>
+        <button className={`page-buttons ${currentPage === 1 ? 'disabled' : ''}`} onClick={prevPage} disabled={currentPage === 1}>
           {'<'}
         </button>
         {Array.from({ length: totalPages }, (_, i) => (
-          <button className={`page-buttons ${currentPage === i + 1 && 'active'}`} key={i} onClick={() => setPage(i + 1)}>
+          <button className={`page-buttons ${currentPage === i + 1 ? 'active' : ''}`} key={i} onClick={() => setPage(i + 1)}>
             {i + 1}
           </button>
         ))}
-        <button className={`page-buttons ${currentPage === totalPages && 'disabled'}`} onClick={nextPage} disabled={currentPage === totalPages}>
+        <button className={`page-buttons ${currentPage === totalPages ? 'disabled' : ''}`} onClick={nextPage} disabled={currentPage === totalPages}>
           {'>'}
         </button>
       </div>

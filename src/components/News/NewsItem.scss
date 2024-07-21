@@ -6,6 +6,11 @@ $secondary-color: #565D6D;
   cursor: pointer;
   margin-bottom: 25px;
   padding: 15px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 
   @media (max-width: 1200px) {
     .title {
@@ -94,8 +99,8 @@ $secondary-color: #565D6D;
 .image {
   border-radius: 8px;
   margin-right: 10px;
-  max-width: 90px;
-  max-height: 72px;
+  max-width: 100px;
+  max-height: 92px;
 }
 
 .date {
