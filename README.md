@@ -7,9 +7,9 @@ npm i
 npm run dev
 ```
 
-- I have used Vite to create the app, along with TypeScript.
-- Also used Redux Toolkit Query (RTK Query) for state management and API calls.
-- Have created loader and No results found section too.
-- Added filters and sorting too. And used a custom hook for managing the pagination.
-- Added some minor hover effects on the component possible.
-- Also completed 2nd Bonus point of showing Page Not Found on any other routes.
+- Utilized Vite with TypeScript for app creation
+- Implemented Redux Toolkit Query (RTK Query) for state management and API calls
+- Developed "Loader" and "No results found" sections.
+- Filters and sorting functionalities were integrated, with pagination handled by a custom hook.
+- Added minor hover effects to enhance user experience.
+- The second bonus point was also completed, which includes displaying a "Page Not Found" message for undefined routes.
